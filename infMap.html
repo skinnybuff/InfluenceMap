@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+    
+    <meta charset="UTF-8" />
+
+    <title>Influence Map Web App</title>
+ 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+    <script src="js/influenceMap.js"></script>
+ 
+    <link rel="stylesheet" type="text/css" href="css/influenceMap.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.22.custom.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+    <div id="wrapper">
+            <header>
+                <hgroup>
+                    <h2 id="userName"> User Name </h3>
+                    <h1 id="title">The Influence Map Web App</h1>
+                </hgroup>
+                <p id="credit">
+                    The analog map was originally developed by <a href="htttp://www.fox-orian.deviantart.com">fox-orian</a>. The Web app developed by Shaun White.
+                </p>
+            </header>
+        <p id="description">
+            As an artist, you are influnced by things.
+            The reason why you do what you do is the
+            combined application of all the things that influence you.
+            If you run into a major block and cannot create a new work,
+            chances are you are forgetting what inspires you and need a
+            refresher.
+            
+            Add information for every thing that influences you
+            and fuels the art you love to create.
+            Place the links and rearrange them in order of prominence.
+            The squares will be populated and you can refer to it
+            as a kind of "map" in the future incase you get lost.
+        </p>
+        <div id="influenceData">
+        <div id="accordion">
+            <div class="group">
+                    <h3><a id="accordionHead1" href="#">Section 1</a></h3>
+                        <form>
+                            <input id="label1" type="text" value="label" />
+                            <input id="s1Artist" type="text" value="artist" />
+                            <input id="s1Link" type="text" value="url" />
+                        </form>
+            </div>
+            <div class="group">
+                    <h3><a id="accordionHead2" href="#">Section 2</a></h3>
+                    <form>
+                        <input id="label2" type="text" value="label" />
+                        <input name="section" type="text" value="artist" />
+                        <input name="section" type="text" value="url" />
+                    </form>
+            </div>
+            <div class="group">
+                    <h3><a id="accordionHead3" href="#">Section 3</a></h3>
+                    <form>
+                        <input id="label3" type="text" value="label" />
+                        <input name="section" type="text" value="artist" />
+                        <input name="section" type="text" value="url" />
+                    </form>
+            </div>
+            <div class="group">
+                    <h3><a id="accordionHead4" href="#">Section 4</a></h3>
+                    <form>
+                        <input id="label4" type="text" value="label" />
+                        <input name="section" type="text" value="artist" />
+                        <input name="section" type="text" value="url" />
+                    </form>
+            </div>
+            <div class="group">
+                    <h3><a id="accordionHead5" href="#">Section 5</a></h3>
+                        <form>
+                            <input id="label5" type="text" value="label" />
+                            <input name="section" type="text" value="artist" />
+                            <input name="section" type="text" value="url" />
+                        </form>
+            </div>
+            <div class="group">
+                    <h3><a id="accordionHead6" href="#">Section 6</a></h3>
+                    <form>
+                        <input id="label6" type="text" value="label" />
+                        <input name="section" type="text" value="artist" />
+                        <input name="section" type="text" value="url" />
+                    </form>
+            </div>
+            <div class="group">
+                    <h3><a id="accordionHead7" href="#">Section 7</a></h3>
+                    <form>
+                        <input id="label7" type="text" value="label" />
+                        <input name="section" type="text" value="artist" />
+                        <input name="section" type="text" value="url" />
+                    </form>
+            </div>
+            <div class="group">
+                    <h3><a id="accordionHead8" href="#">Section 8</a></h3>
+                    <form>
+                        <input id="label8" type="text" value="label" />
+                        <input name="section" type="text" value="artist" />
+                        <input name="section" type="text" value="url" />
+                    </form>
+            </div>            
+            <div class="group">
+                    <h3><a id="accordionHead9" href="#">Section 9</a></h3>
+                        <form>
+                            <input id="label9" type="text" value="label" />
+                            <input name="section" type="text" value="artist" />
+                            <input name="section" type="text" value="url" />
+                        </form>
+            </div>
+            <div class="group">
+                    <h3><a id="accordionHead10" href="#">Section 10</a></h3>
+                    <form>
+                        <input id="label10" type="text" value="label" />
+                        <input name="section" type="text" value="artist" />
+                        <input name="section" type="text" value="url" />
+                    </form>
+            </div>
+            <div class="group">
+                    <h3><a id="accordionHead11" href="#">Section 11</a></h3>
+                    <form>
+                        <input id="label11" type="text" value="label" />
+                        <input name="section" type="text" value="artist" />
+                        <input name="section" type="text" value="url" />
+                    </form>
+            </div>
+            <div class="group">
+                    <h3><a id="accordionHead12" href="#">Section 12</a></h3>
+                    <form>
+                        <input id="label12" type="text" value="label" />
+                        <input name="section" type="text" value="artist" />
+                        <input name="section" type="text" value="url" />
+                    </form>
+            </div>
+            <div class="group">
+                    <h3><a id="accordionHead13" href="#">Section 13</a></h3>
+                    <form>
+                        <input id="label13" type="text" value="label" />
+                        <input name="section" type="text" value="artist" />
+                        <input name="section" type="text" value="url" />
+                    </form>
+            </div>            
+        </div> <!--  close accordian -->
+        </div> <!--  close influecnce data -->
+        <div id="influenceDisplay">
+            <div id="image1" class="imageBox largestImage"></div>
+            <div id="image2" class="imageBox largeImage"></div>
+            <div id="image3" class="imageBox largeImage"></div>
+            <div id="image4" class="imageBox regularImage"></div>
+            <div id="image5" class="imageBox regularImage"></div>
+            <div id="image6" class="imageBox regularImage"></div>
+            <div id="image7" class="imageBox smallImage"></div>
+            <div id="image8" class="imageBox smallImage"></div>
+            <div id="image9" class="imageBox smallImage"></div>
+            <div id="image10" class="imageBox smallImage"></div>
+            <div id="image11" class="imageBox smallImage"></div>
+            <div id="image12" class="imageBox smallImage"></div>
+            <div id="image13" class="imageBox smallImage"></div>            
+        </div> <!--  close influence display -->
+    </div>
+</body>
+</html>
+

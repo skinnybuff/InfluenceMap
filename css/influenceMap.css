@@ -1,0 +1,94 @@
+/* minimal reset */
+html, body, div, ul, ol, li, form {
+    margin: 0;
+    padding: 0; }
+h1, h2, h3, h4, h5, h6, p {
+    font-weight:normal; }
+th, td, caption {
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top; }
+img {
+    border: 0; }
+li {
+    list-style: none; }
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+input, textarea, select {
+    font-size: 80%;
+    line-height: 1.1;}
+
+/* Start General Styling  */
+body{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: #222222;
+    color: #dddddd;
+}
+a{
+    color: #ff0000;
+}
+
+/* element styling */
+#wrapper {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+#userName{
+    font-weight: 800;
+    margin-bottom: -2em;
+}
+#title{
+    font-size: 4em;
+    font-weight: 800;
+    margin-bottom: -.25em;
+}
+#credit{
+    font-size: smaller;
+    margin-bottom: 4em;
+}
+#description{
+    margin-bottom: 1em;
+    padding-right: 1em;
+}
+#influenceData {
+    width: 30%;
+    float: left;
+}
+#accordion {
+	
+}
+#accordion h3 a{
+    margin-left: 1em;	
+}
+#influenceDisplay {
+    width: 60%;
+    float: left;
+}
+input{
+    color: #888888;
+}
+.imageBox {
+    margin: 1em;
+    background-color: #000000;
+    display: inline-block;
+}
+.largestImage{
+    width: 9em;
+    height: 9em;
+}
+.largeImage{
+    width: 6em;
+    height: 6em;       
+}
+.regularImage{
+    width: 6em;
+    height: 3em;       
+}
+.smallImage{
+    width: 3em;
+    height: 3em;       
+}
