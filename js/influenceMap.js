@@ -1,5 +1,15 @@
 jQuery(document).ready(function(){
 	
+	// accordian storage array 
+	var sectionOdrer = [];
+	// pushes starting order to array
+	$(function(){
+		$('h3 a').each(function(index) {
+			sectionOdrer.push(index + ': ' + $(this).text());
+			//console.log(index + ': ' + $(this).text());
+		});	
+	});
+	// JQ ui accordian and drag and drop functionality
         $(function() {
 		$( "#accordion" )
 			.accordion({
@@ -15,41 +25,39 @@ jQuery(document).ready(function(){
 				}
 			});
 	});
-	
-	
+	//dynamicly change sectioon header with accordians first input
 	$('input[id^="label"]').keyup(function() {
-		//$('').html(this.value)
-		
+
+		// collect the id of element in focus	
 		var labelHolder = $(this).attr("id");
+		// trim of the naming convention and keep the trailing number
 		var sectionNumber = labelHolder.slice(5);
-		//'[id^="accordionHead"]' + sectionNumber
+		//adds the input value to the section header
 		$('a[id$="' + sectionNumber + '"]').html(this.value);
 		
 	});
 	
-	var sectionOdrer = [];
-	$('input[id^="accordionHead"]').each(function(index) {
-		var tempHeader = this.value;
-		sectionOdrer.push(tempHeader.innerHTML);
-		console.log(tempHeader);
+	// a var to make the mouse move event boolean ** use with mouse down to target a drag **
+	var drag = $(document).mousemove(); 
+	
+	//checking for the click on accordion header
+	$('[id^="accordionHead"]').mousedown( function() {
+		// checking for both click and drag
+		if(drag){
+			// on release 
+			$(this).mouseup(function() {
+				// TODO:  update the array
+				console.log(this.innerHTML);				
+			});
+		};
+		
 	});
 	
+	/*  TODO:  use accordain second inputs to add a tooltip to the image boxes
+		using the largest image for testing
+	*/
+	$('.largestImage').attr("hover test");
+
 	
-	$( function(){
-		
-		
-	
-	});
-	
-	
-        /*
-        $(#accordion).click(function() {
-		$(this).next().toggle('slow');
-		return false;
-	}).next().hide();
-        */
-        
-	var testLabel = $('[name=name1]').val();
-	$().html(testLabel);
-	
+
 });
