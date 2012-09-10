@@ -2,11 +2,12 @@ jQuery(document).ready(function(){
 	
 	// accordian storage array 
 	var sectionOdrer = [];
+	var imageDisplay = [];
 	// pushes starting order to array
 	$(function (){
 		$('h3 a').each(function(index, value) {
 			//making an object array from form data
-			$('form').each( console.log($(this).serializeArray()));
+			//$('form').each( console.log($(this).serializeArray()));
 			// pusshing section titles on the order array
 			sectionOdrer.push(index + ': ' + $(this).text());
 			console.log(index + ': ' + $(this).text());
@@ -61,7 +62,22 @@ jQuery(document).ready(function(){
 	/*  TODO:  use accordain second inputs to add a tooltip to the image boxes
 		using the largest image for testing
 	*/
-	$('.largestImage').attr("hover test");
+	$(function (){
+		// working on all of the display divs
+		$('#influenceDisplay > div').each(function(index, value) {
+			// apply the url of the section to the image siplay array
+			for(var i=0; i < sectionOdrer.length; i++){
+				imageDisplay[i]=sectionOdrer[i].url;
+				console.log(imageDisplay[i]);
+			}
+			
+			// pushing section titles on the order array
+			imageDisplay.push(index + ': ' + $(this).attr('id'));
+			console.log(index + ': ' + $(this).attr('id'));
+		});	
+	});
+	// add url test
+	$('.largestImage').attr('style', "background-image: url(http://nortonmotorcycles.com/bikes/NortonCommando961Sport/1.jpg);background-size: contain;");
 	
 	// object constructor for influence items
 	function influence(title,artist,url,order)
