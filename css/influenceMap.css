@@ -1,41 +1,32 @@
-/* minimal reset */
-html, body, div, ul, ol, li, form {
-    margin: 0;
-    padding: 0; }
-h1, h2, h3, h4, h5, h6, p {
-    font-weight:normal; }
-th, td, caption {
-    font-weight: normal;
-    text-align: left;
-    vertical-align: top; }
-img {
-    border: 0; }
-li {
-    list-style: none; }
-table {
-    border-collapse: collapse;
-    border-spacing: 0; }
-input, textarea, select {
-    font-size: 80%;
-    line-height: 1.1;}
+@import url(/css/normalize.css);
+
+/* Font Face Replacement */
 
 /* Start General Styling  */
 body{
+    margin: 0;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    background-color: #222222;
-    color: #dddddd;
+    background-color: #ffffff;
 }
 a{
     color: #ff0000;
 }
 
-/* element styling */
 #wrapper {
+    float: left;
     width: 100%;
     padding: 1em;
     margin-bottom: 1em;
+    background: #dddddd;
+}
+#masthead{
+    width: 100%;
+    background: #999999;
+    color: #333333;
+    margin: -1em -1em 1em -1em;
+    padding: 1em;
 }
 #userName{
     font-weight: 800;
@@ -52,7 +43,7 @@ a{
 }
 #credit{
     font-size: smaller;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 #description{
     margin-bottom: 1em;
@@ -62,11 +53,19 @@ a{
     width: 30%;
     float: left;
 }
-#accordion {
-	
+
+#accordion h3{
+    background: #454545;
+    margin: 1px auto;
+    border-bottom: solid 1px #232323;
+    border-top: : solid 1px #bbbbbb;
+    padding: .3em;
+    border-radius: 2px;
 }
 #accordion h3 a{
-    margin-left: 1em;	
+    color: #ffffff;
+    margin-left: 1em;
+    text-decoration: none;
 }
 #influenceDisplay {
     width: 60%;
@@ -75,6 +74,7 @@ a{
 input{
     color: #888888;
 }
+/* Image Layout Styling  */
 .imageBox {
     margin: 1em;
     background-color: #000000;

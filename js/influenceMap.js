@@ -4,7 +4,7 @@ jQuery(document).ready(function(){
         $(function() {
 		$( "#accordion" )
 			.accordion({
-				header: "> div > h3"
+				header: "> div > h3", collapsible: true
 			})
 			.sortable({
 				axis: "y",
