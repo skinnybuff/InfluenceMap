@@ -7,155 +7,154 @@
 
     <title>Influence Map Web App</title>
  
-    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+    <script scr="js/jquery-placeholder.js"></script>
     <script src="js/influenceMap.js"></script>
  
     <link rel="stylesheet" type="text/css" href="css/influenceMap.css" />
-    <!--<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.22.custom.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.22.custom.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
   
 </head>
 
 <body>
     <div id="wrapper">
-        <div id="masthead">
             <header>
                     <h2 id="userName"> Your Name: </h2> <br />
-                    <input id="nameInput" type="text" value="Your Name Here" />
+                    <input id="nameInput" type="text" placeholder="Your Name Here" />
                     <h1 id="title">The Influence Map Web App</h1>
                 <p id="credit">
                     The analog map was originally developed by <a href="htttp://www.fox-orian.deviantart.com">fox-orian</a>. The Web app developed by Shaun White & Elrick Ryan.
                 </p>
             </header>
-            <p id="description">
-                As an artist, you are influnced by things.
-                The reason why you do what you do is the
-                combined application of all the things that influence you.
-                If you run into a major block and cannot create a new work,
-                chances are you are forgetting what inspires you and need a
-                refresher.
-                
-                Add information for every thing that influences you
-                and fuels the art you love to create.
-                Place the links and rearrange them in order of prominence.
-                The squares will be populated and you can refer to it
-                as a kind of "map" in the future incase you get lost.
-            </p>
-        </div>    
+        <p id="description">
+            As an artist, you are influnced by things.
+            The reason why you do what you do is the
+            combined application of all the things that influence you.
+            If you run into a major block and cannot create a new work,
+            chances are you are forgetting what inspires you and need a
+            refresher.
+            
+            Add information for every thing that influences you
+            and fuels the art you love to create.
+            Place the links and rearrange them in order of prominence.
+            The squares will be populated and you can refer to it
+            as a kind of "map" in the future incase you get lost.
+        </p>
         <div id="influenceData">
         <div id="accordion">
-            <div class="group">
+            <div id="ah1"class="group">
                     <h3><a id="accordionHead1" href="#">Section 1</a></h3>
                         <form>
-                            <input id="label1" type="text" value="label" />
-                            <input id="s1Artist" type="text" value="artist" />
-                            <input id="s1Link" type="text" value="url" />
+                            <input id="label1" type="text" placeholder="label" />
+                            <input id="s1Artist" type="text" placeholder="artist" />
+                            <input id="s1Link" type="text" placeholder="url" />
                         </form>
             </div>
-            <div class="group">
+            <div id="ah2"class="group">
                     <h3><a id="accordionHead2" href="#">Section 2</a></h3>
                     <form>
-                        <input id="label2" type="text" value="label" />
-                        <input name="s2Artist" type="text" value="artist" />
-                        <input name="s2Link" type="text" value="url" />
+                        <input id="label2" type="text" placeholder="label" />
+                        <input name="s2Artist" type="text" placeholder="artist" />
+                        <input name="s2Link" type="text" placeholder="url" />
                     </form>
             </div>
-            <div class="group">
+            <div id="ah3"class="group">
                     <h3><a id="accordionHead3" href="#">Section 3</a></h3>
                     <form>
-                        <input id="label3" type="text" value="label" />
-                        <input name="s3Artist" type="text" value="artist" />
-                        <input name="s3Link" type="text" value="url" />
+                        <input id="label3" type="text" placeholder="label" />
+                        <input name="s3Artist" type="text" placeholder="artist" />
+                        <input name="s3Link" type="text" placeholder="url" />
                     </form>
             </div>
-            <div class="group">
+            <div id="ah4" class="group">
                     <h3><a id="accordionHead4" href="#">Section 4</a></h3>
                     <form>
-                        <input id="label4" type="text" value="label" />
-                        <input name="s4Artist" type="text" value="artist" />
-                        <input name="s4Link" type="text" value="url" />
+                        <input id="label4" type="text" placeholder="label" />
+                        <input name="s4Artist" type="text" placeholder="artist" />
+                        <input name="s4Link" type="text" placeholder="url" />
                     </form>
             </div>
-            <div class="group">
+            <div id="ah5" class="group">
                     <h3><a id="accordionHead5" href="#">Section 5</a></h3>
                         <form>
-                            <input id="label5" type="text" value="label" />
-                            <input name="s5Artist" type="text" value="artist" />
-                            <input name="s5Link" type="text" value="url" />
+                            <input id="label5" type="text" placeholder="label" />
+                            <input name="s5Artist" type="text" placeholder="artist" />
+                            <input name="s5Link" type="text" placeholder="url" />
                         </form>
             </div>
-            <div class="group">
+            <div id="ah6" class="group">
                     <h3><a id="accordionHead6" href="#">Section 6</a></h3>
                     <form>
-                        <input id="label6" type="text" value="label" />
-                        <input name="s6Artist" type="text" value="artist" />
-                        <input name="s6Link" type="text" value="url" />
+                        <input id="label6" type="text" placeholder="label" />
+                        <input name="s6Artist" type="text" placeholder="artist" />
+                        <input name="s6Link" type="text" placeholder="url" />
                     </form>
             </div>
-            <div class="group">
+            <div id="ah7" class="group">
                     <h3><a id="accordionHead7" href="#">Section 7</a></h3>
                     <form>
-                        <input id="label7" type="text" value="label" />
-                        <input name="s7Artist" type="text" value="artist" />
-                        <input name="s7Link" type="text" value="url" />
+                        <input id="label7" type="text" placeholder="label" />
+                        <input name="s7Artist" type="text" placeholder="artist" />
+                        <input name="s7Link" type="text" placeholder="url" />
                     </form>
             </div>
-            <div class="group">
+            <div id="ah8" class="group">
                     <h3><a id="accordionHead8" href="#">Section 8</a></h3>
                     <form>
-                        <input id="label8" type="text" value="label" />
-                        <input name="s8Artist" type="text" value="artist" />
-                        <input name="s8Link" type="text" value="url" />
+                        <input id="label8" type="text" placeholder="label" />
+                        <input name="s8Artist" type="text" placeholder="artist" />
+                        <input name="s8Link" type="text" placeholder="url" />
                     </form>
             </div>            
-            <div class="group">
+            <div id="ah9" class="group">
                     <h3><a id="accordionHead9" href="#">Section 9</a></h3>
                         <form>
-                            <input id="label9" type="text" value="label" />
-                            <input name="s9Artist" type="text" value="artist" />
-                            <input name="s9Link" type="text" value="url" />
+                            <input id="label9" type="text" placeholder="label" />
+                            <input name="s9Artist" type="text" placeholder="artist" />
+                            <input name="s9Link" type="text" placeholder="url" />
                         </form>
             </div>
-            <div class="group">
+            <div id="ah10" class="group">
                     <h3><a id="accordionHead10" href="#">Section 10</a></h3>
                     <form>
-                        <input id="label10" type="text" value="label" />
-                        <input name="s10Artist" type="text" value="artist" />
-                        <input name="s10Link" type="text" value="url" />
+                        <input id="label10" type="text" placeholder="label" />
+                        <input name="s10Artist" type="text" placeholder="artist" />
+                        <input name="s10Link" type="text" placeholder="url" />
                     </form>
             </div>
-            <div class="group">
+            <div id="ah11" class="group">
                     <h3><a id="accordionHead11" href="#">Section 11</a></h3>
                     <form>
-                        <input id="label11" type="text" value="label" />
-                        <input name="s11Artist" type="text" value="artist" />
-                        <input name="s11Link" type="text" value="url" />
+                        <input id="label11" type="text" placeholder="label" />
+                        <input name="s11Artist" type="text" placeholder="artist" />
+                        <input name="s11Link" type="text" placeholder="url" />
                     </form>
             </div>
-            <div class="group">
+            <div id="ah12" class="group">
                     <h3><a id="accordionHead12" href="#">Section 12</a></h3>
                     <form>
-                        <input id="label12" type="text" value="label" />
-                        <input name="s12Artist" type="text" value="artist" />
-                        <input name="s12Link" type="text" value="url" />
+                        <input id="label12" type="text" placeholder="label" />
+                        <input name="s12Artist" type="text" placeholder="artist" />
+                        <input name="s12Link" type="text" placeholder="url" />
                     </form>
             </div>
-            <div class="group">
+            <div id="ah13" class="group">
                     <h3><a id="accordionHead13" href="#">Section 13</a></h3>
                     <form>
-                        <input id="label13" type="text" value="label" />
-                        <input name="s13Artist" type="text" value="artist" />
-                        <input name="s3Link" type="text" value="url" />
+                        <input id="label13" type="text" placeholder="label" />
+                        <input name="s13Artist" type="text" placeholder="artist" />
+                        <input name="s3Link" type="text" placeholder="url" />
                     </form>
             </div>            
         </div> <!--  close accordian -->
         </div> <!--  close influecnce data -->
         <div id="influenceDisplay">
-            <div id="image1" class="imageBox largestImage"></div>
-            <div id="image2" class="imageBox largeImage"></div>
-            <div id="image3" class="imageBox largeImage"></div>
+            <div id="image1" class="imageBox largestImage">Test</div>
+            <div id="image2" class="imageBox largeImage">Test 2</div>
+            <div id="image3" class="imageBox largeImage">Test 3</div>
             <div id="image4" class="imageBox regularImage"></div>
             <div id="image5" class="imageBox regularImage"></div>
             <div id="image6" class="imageBox regularImage"></div>
@@ -165,7 +164,8 @@
             <div id="image10" class="imageBox smallImage"></div>
             <div id="image11" class="imageBox smallImage"></div>
             <div id="image12" class="imageBox smallImage"></div>
-            <div id="image13" class="imageBox smallImage"></div>            
+            <div id="image13" class="imageBox smallImage"></div>
+            <p id="printLog"></p>            
         </div> <!--  close influence display -->
     </div>
 </body>
